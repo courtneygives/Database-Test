@@ -1,0 +1,26 @@
+{
+  "name": "database-test",
+  "version": "1.0.0",
+  "description": "In this exercise you'll be creating a MongoDB application to store student assignment information, including the assignment name, the student's identity, their score on the assignment, and the date it was turned in. Only the identity and date completed are required.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/courtneygives/Database-Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/courtneygives/Database-Test/issues"
+  },
+  "homepage": "https://github.com/courtneygives/Database-Test#readme",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.12"
+  }
+}
