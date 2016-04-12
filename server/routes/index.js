@@ -21,7 +21,7 @@ router.get('/all', function(request, response){
 
 router.post('/add', function(request, response){
   var data = request.body;
-
+  console.log(data);
   var assignment = new Assignment({
     assignmentNum: data.assignmentNum,
     studentName: data.studentName,
@@ -29,6 +29,16 @@ router.post('/add', function(request, response){
     dateComplete: data.dateComplete
   });
 
+  assignment.save(function(err){
+    if(err){
+      console.log(err);
+    } else {
+      console.log('save successful');
+      response.sendStatus(200);
+    }
+  });
 });
+
+router.delete()
 
 module.exports = router;

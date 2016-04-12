@@ -5,7 +5,7 @@ var assignSchema = new Schema ({
   assignmentNum: Number,
   studentName: {type: String, required: true},
   score: Number,
-  dateComplete: {type: Date, required: true}
+  dateComplete: {type: Date, required: false}
 });
 
 var Assignment = mongoose.model('Assignment', assignSchema);

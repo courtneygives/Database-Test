@@ -6,7 +6,10 @@ var bodyParser = require('body-parser');
 var assignments = require('../models/assignments');
 var index = require('./routes/index');
 
+app.use(express.static('server/public'));
+
 app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({extended:true}));
 app.use('/', index);
 
 var mongoURI = "mongodb://localhost:27017/aassignments";

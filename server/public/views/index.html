@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>INDEX!!</title>
+    <script src = "/vendor/angular/angular.min.js">
+    </script>
+    <script src= "/assets/scripts/client.min.js"></script>
   </head>
   <body ng-controller="MainControl">
     <h1>Index Page</h1>
@@ -21,9 +24,14 @@
 
       <button ng-click="newEntry()">Add to list</button>
     </div>
-    <div ng-show="current" class="">
-
+    <div class="">
+      <ul>
+          <li ng-repeat="assignment in assignments">Name: {{assignment.studentName}}<br>
+            Assignment #: {{assignment.assignmentNum}}
+          </li>
+      </ul>
     </div>
+
 
   </body>
 </html>
